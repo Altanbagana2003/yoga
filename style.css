@@ -9,20 +9,39 @@
 .container {
     display: flex;
 }
+body {
+    background-color:rgb(235, 235, 249);
+}
 .first {
+    position: fixed;
     height: 100vh;
     width: 20%;
     background: rgb(245, 245, 255);
+    z-index: 1;
 }
 .second {
-    width: 80%;
+    width: 100%;
     height: 400vh;
     background: rgb(235, 235, 249);
+    padding-left: 20%;
+   
 }
 .nav {
-    height: 14vh;
-    width: 100%;
+    position: fixed;
+    height: 10vh;
+    right: 0;
+    top: 0;
+    left: 0;
     background: rgb(235, 235, 249);
+    padding-left: 20%;
+}
+.intro {
+    top: 120px;
+    position: fixed;
+    height: 90vh;
+    border-radius: 20px;
+    width: 30%;
+    right: 0;
 }
 .main {
     display: flex;
@@ -39,8 +58,10 @@
     width: 55%;
 }
 .slides {
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
+    overflow: scroll;
 }
 .slides1 {
     display: flex;
@@ -228,11 +249,6 @@
 .third-slide2:hover, .second-slide2:hover, .first-slide2:hover, .second-slide1:hover {
     background-color: rgb(227,227,251);
 }
-.intro {
-    height: 90vh;
-    border-radius: 20px;
-    width: 30%;
-}
 .first {
     align-items: center;
     display: flex;
@@ -297,11 +313,13 @@ form button {
 .calendar {
     display: flex;
     align-items: center;
+    overflow: scroll;
+    height: 100vh;
 }
 .calendar-container {
     border-radius: 20px;
     width: 70%;
-    height: 500vh;
+    height: 1000vh;
     background: rgb(245, 245, 245);
 }
 .intro {
@@ -438,7 +456,7 @@ form button {
     content: '';
     position: absolute;
     left: 54.5%;
-    top: 6.5%;
+    top: 45%;
     width: 0;
     height: 0;
     border-left: 6px solid transparent;
@@ -452,8 +470,8 @@ form button {
 .gurvaa2::after{
     content: '';
     position: absolute;
-    left: 64.5%;
-    top: 6.5%;
+    left: 63.5%;
+    top: 45%;
     width: 0;
     height: 0;
     border-left: 6px solid transparent;
@@ -464,8 +482,8 @@ form button {
 .gurvaa3::after{
     content: '';
     position: absolute;
-    left: 73%;
-    top: 6.5%;
+    left: 71%;
+    top: 45%;
     width: 0;
     height: 0;
     border-left: 6px solid transparent;
